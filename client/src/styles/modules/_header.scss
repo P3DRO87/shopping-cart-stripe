@@ -1,0 +1,26 @@
+.header {
+   padding: 10px 0;
+   background: #27292d;
+   color: #fff;
+   h1 {
+      font-size: 2em;
+   }
+   .menu-cart-button-container {
+      button {
+         border: none;
+         color: #fff;
+         background: none;
+         padding: 10px 20px;
+         border-radius: 4px;
+         font-size: 1.5em;
+         transition: background ease 0.3s;
+         &:hover {
+            background: rgba(255, 255, 255, 0.2);
+         }
+         &:active {
+            transition: none;
+            background: rgba(255, 255, 255, 0.4);
+         }
+      }
+   }
+}

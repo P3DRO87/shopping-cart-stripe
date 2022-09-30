@@ -1,0 +1,46 @@
+.custom-modal {
+   position: fixed;
+   z-index: -1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: flex;
+   background: rgba(0, 0, 0, 0.8);
+   transition: all ease 0.3s;
+   backdrop-filter: blur(3px);
+   opacity: 0;
+   &.active {
+      z-index: 99999;
+      opacity: 1;
+      .custom-modal-content-wrap {
+         transform: scale(1);
+      }
+   }
+   .custom-modal-content-wrap {
+      display: flex;
+      transition: transform ease 0.3s;
+      transform: scale(0.2);
+      margin: auto;
+      background: #212121;
+      padding: 0.3rem;
+      border-radius: 0.3rem;
+      min-width: 35%;
+      @media only screen and (max-width: 576px) {
+         min-width: 90%;
+      }
+      .close-modal-btn {
+         position: absolute;
+         color: #fff;
+         background: none;
+         border: none;
+         right: 0;
+         margin-right: 0.5rem;
+         font-size: 1.5em;
+      }
+      .custom-modal-content {
+         margin-top: 2.5rem;
+         width: 100%;
+      }
+   }
+}

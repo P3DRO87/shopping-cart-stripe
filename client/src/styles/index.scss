@@ -1,0 +1,42 @@
+@import "modules/general";
+@import "modules/slider-carousel";
+@import "modules/header";
+@import "modules/products-grid-item";
+@import "modules/side-cart-panel";
+@import "modules/cart-panel-item";
+@import "modules/toast";
+@import "modules/custom-modal";
+@import "modules/buy-form";
+
+.slider-container {
+   min-height: 100%;
+   margin: auto;
+   width: 60%;
+}
+
+.app {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.main-title {
+   margin-top: 0.5em;
+   text-align: center;
+}
+
+.card-item {
+   width: 100%;
+   img {
+      width: 100%;
+   }
+}
+
+.slider-carousel {
+   &:hover {
+      .slider-control {
+         color: #fff;
+         background: rgba(0, 0, 0, 0.6);
+      }
+   }
+}
